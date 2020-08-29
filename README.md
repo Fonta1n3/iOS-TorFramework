@@ -9,10 +9,10 @@ Currently, the framework compiles in static versions of `tor`, `libevent`, `open
 
 |          |         |
 |:-------- | -------:|
-| tor      | 0.4.0.6 |
+| tor      | 0.4.3.6 |
 | libevent | 2.1.11  |
-| OpenSSL  | 1.1.1d  |
-| liblzma  | 5.2.4   |
+| OpenSSL  | 1.1.1g  |
+| liblzma  | 5.2.5   |
 
 ## Requirements
 
@@ -56,7 +56,7 @@ Alternatively, you may use the following to use binary-compiled versions of Tor.
 correspond to releases in GitHub:
 
 ```ogdl
-binary "https://icepa.github.io/Tor.framework/Tor.json" == 400.5.2
+binary "https://icepa.github.io/Tor.framework/Tor.json" == 401.6.1
 ```
 
 For available precompiled versions, see [docs/Tor.json](docs/Tor.json). Since Tor 0.3.5.2, 
@@ -75,6 +75,8 @@ In `Tor/version.sh`, increment the `TOR_BUNDLE_SHORT_VERSION_STRING` version per
 format described above. Change `TOR_BUNDLE_SHORT_VERSION_DATE` to the current date. 
 Commit these changes.
 
+Also update info in `README.md`, `Tor.podspec` and `docs/Tor.json`!
+
 Create a git tag for the version, and then 
 [build + archive the framework](https://github.com/Carthage/Carthage/#archive-prebuilt-frameworks-into-one-zip-file):
 
@@ -90,6 +92,31 @@ to the tag, attach the generated `Tor.framework.zip` to the release.
 
 Add a corresponding entry to [docs/Tor.json](docs/Tor.json), commit & push that so that it becomes 
 available at https://icepa.github.io/Tor.framework/Tor.json
+
+### Upgrading Tor
+
+To upgrade Tor:
+
+```bash
+cd Tor/tor
+git fetch
+git checkout tor-0.4.3.6 # Find latest versions with git tag -l
+rm configure # This will trigger a complete rebuild in tor.sh!
+```
+
+-> Test build by building `Tor-iOS` and `Tor-Mac` targets in Xcode.
+
+Check build output in the Report Navigator. (Last tab in the left pane.)
+
+The `tor.sh` build script will call `make show-libs`, which outputs all libraries which are created by 
+the Tor build. This is echoed with a "LIBRARIES: " header. Search for that in the build output and
+compare the list against the list of "Frameworks and Libraries" in the `Tor-iOS` and `Tor-Mac`
+targets. Add missing ones accordingly.
+
+The typically can be found in `~/Library/Developer/Xcode/DerivedData/Tor-`[random ID]`/Build/Products/Debug[-iphonesimulator]`.
+
+The `project.pbxproj` file may need manual editing to set the references to the built libraries 
+in a way, which is independent of your personal setup. Check other entries for how that is done.
 
 ## Usage
 

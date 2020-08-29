@@ -9,7 +9,9 @@
 
 #import <event2/event.h>
 #import <asl.h>
-#import <log/log.h>
+// XXXX This is not an exposed or supported Tor API.
+// XXXX If Tor changes this header, then this code might break.
+#import <lib/log/log.h>
 
 tor_log_cb tor_log_callback;
 tor_log_cb event_log_callback;
@@ -154,7 +156,7 @@ static inline os_log_type_t TORLogTypeFromSeverity(int severity) {
     }
 }
 
-static void TORLogCallback(int severity, uint32_t domain, const char *msg) {
+static void TORLogCallback(int severity, uint64_t domain, const char *msg) {
     if (domain & LD_NOCB) {
         return;
     }

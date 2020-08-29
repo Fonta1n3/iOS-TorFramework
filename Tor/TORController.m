@@ -7,8 +7,11 @@
 
 #import "TORController.h"
 
-#import <or/or.h>
+#import <sys/socket.h>
 #import <sys/un.h>
+#import <netinet/in.h>
+#import <arpa/inet.h>
+
 #import "TORThread.h"
 #import "NSCharacterSet+PredefinedSets.h"
 
@@ -229,11 +232,7 @@ static NSString * const TORControllerEndReplyLineSeparator = @" ";
 }
 
 - (void)disconnect {
-    [self sendCommand:@"SIGNAL NEWNYM" arguments:nil data:nil observer:^BOOL(NSArray<NSNumber *> * __unused codes, NSArray<NSData *> * __unused lines, BOOL * __unused stop) {
-        return YES;
-    }];
-    
-    [self sendCommand:@"SIGNAL SHUTDOWN" arguments:@[@"0"] data:nil observer:^BOOL(NSArray<NSNumber *> * __unused codes, NSArray<NSData *> * __unused lines, BOOL * __unused stop) {
+    [self sendCommand:@"SIGNAL SHUTDOWN" arguments:nil data:nil observer:^BOOL(NSArray<NSNumber *> * __unused codes, NSArray<NSData *> * __unused lines, BOOL * __unused stop) {
         shutdown(self->sock, SHUT_RDWR);
         self->_channel = nil;
      
@@ -495,7 +494,8 @@ static NSString * const TORControllerEndReplyLineSeparator = @" ";
                                      NSCharacterSet.doubleQuote];
 
                     [components removeObjectAtIndex:0];
-                    NSString* value = [components componentsJoinedByString:@"="];
+                    NSString* value = [[components componentsJoinedByString:@"="]
+                                       stringByTrimmingCharactersInSet:NSCharacterSet.doubleQuote];
 
                     if ([keys containsObject:key])
                     {
@@ -706,7 +706,16 @@ static NSString * const TORControllerEndReplyLineSeparator = @" ";
 
 - (void)closeCircuitsByIds:(NSArray<NSString *> *)circuitIds completion:(void (^__nullable)(BOOL success))completion
 {
-    dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
+    long queueId;
+
+    if (@available(macOS 10.10, *)) {
+        queueId = QOS_CLASS_USER_INITIATED;
+    }
+    else {
+        queueId = DISPATCH_QUEUE_PRIORITY_HIGH;
+    }
+
+    dispatch_async(dispatch_get_global_queue(queueId, 0), ^{
         __block BOOL success = YES;
 
         for (NSString *circuitId in circuitIds)

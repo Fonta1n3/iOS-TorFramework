@@ -21,8 +21,8 @@
 
 # BUGFIX: Don't use dates with localized month names, because that breaks building
 # on non-english localized systems. Instead stick to an international format.
-TOR_BUNDLE_SHORT_VERSION_DATE="2019-12-13 11:00:00 GMT"
-TOR_BUNDLE_SHORT_VERSION_STRING=400.6.1
+TOR_BUNDLE_SHORT_VERSION_DATE="2020-07-22 12:30:00 GMT"
+TOR_BUNDLE_SHORT_VERSION_STRING=403.6.1
 
 #####
 
@@ -34,6 +34,9 @@ SECONDS_FROM_EPOCH_TO_NOW=$( date "+%s" )
 SECONDS_FROM_EPOCH_TO_DATE=$( date -j -f "%Y-%m-%d %H:%M:%S %Z" "${TOR_BUNDLE_SHORT_VERSION_DATE}" "+%s" )
 
 MINUTES_SINCE_DATE=$(( $(( ${SECONDS_FROM_EPOCH_TO_NOW}-${SECONDS_FROM_EPOCH_TO_DATE} ))/60 ))
+
+# Fix negative numbers because TOR_BUNDLE_SHORT_VERSION_DATE is later then NOW.
+MINUTES_SINCE_DATE=${MINUTES_SINCE_DATE#-}
 
 #####
 # decimalize git hash

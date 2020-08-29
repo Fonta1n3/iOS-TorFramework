@@ -313,116 +313,163 @@ static NSDateFormatter *_timestampFormatter;
 
         NSRange range = NSMakeRange(0, circuitString.length);
 
-        NSArray<NSTextCheckingResult *> *matches = [TORCircuit.mainInfoRegex
+        NSTextCheckingResult *match = [TORCircuit.mainInfoRegex
                                                     matchesInString:circuitString options:0
-                                                    range:range];
-
-        if (matches.firstObject.numberOfRanges > 1)
+                                                    range:range].firstObject;
+        
+        if (match && [match rangeAtIndex:1].location != NSNotFound)
         {
-            _circuitId = [circuitString substringWithRange:[matches.firstObject rangeAtIndex:1]];
+            _circuitId = [circuitString substringWithRange:[match rangeAtIndex:1]];
         }
-
-        if (matches.firstObject.numberOfRanges > 2)
+        
+        if (match && [match rangeAtIndex:2].location != NSNotFound)
         {
-            _status = [circuitString substringWithRange:[matches.firstObject rangeAtIndex:2]];
+            _status = [circuitString substringWithRange:[match rangeAtIndex:2]];
         }
-
-        if (matches.firstObject.numberOfRanges > 3)
+        
+        if (match && [match rangeAtIndex:3].location != NSNotFound)
         {
             NSMutableArray<TORNode *> *nodes = [NSMutableArray new];
-
-            NSString *path = [circuitString substringWithRange:[matches.firstObject rangeAtIndex:3]];
+            
+            NSString *path = [circuitString substringWithRange:[match rangeAtIndex:3]];
 
             NSArray<NSString *> *nodesStrings = [path componentsSeparatedByString:@","];
 
             for (NSString *nodeString in nodesStrings)
             {
                 [nodes addObject:
-                 [[TORNode alloc] initFromString:
-                  [nodeString stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceCharacterSet]]];
+                [[TORNode alloc] initFromString:
+                    [nodeString stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceCharacterSet]]];
             }
 
             _nodes = nodes;
         }
+        
+        match = [[TORCircuit regexForOption:@"BUILD_FLAGS"]
+                   matchesInString:circuitString options:0 range:range].firstObject;
 
-        matches = [[TORCircuit regexForOption:@"BUILD_FLAGS"]
-                   matchesInString:circuitString options:0 range:range];
-
-        if (matches.firstObject.numberOfRanges > 1)
+        if (match && [match rangeAtIndex:1].location != NSNotFound)
         {
-            _buildFlags = [[circuitString substringWithRange:[matches.firstObject rangeAtIndex:1]]
+            _buildFlags = [[circuitString substringWithRange:[match rangeAtIndex:1]]
                            componentsSeparatedByString:@","];
         }
 
-        matches = [[TORCircuit regexForOption:@"PURPOSE"]
-                   matchesInString:circuitString options:0 range:range];
+        match = [[TORCircuit regexForOption:@"PURPOSE"]
+                    matchesInString:circuitString options:0 range:range].firstObject;
 
-        if (matches.firstObject.numberOfRanges > 1)
+        if (match && [match rangeAtIndex:1].location != NSNotFound)
         {
-            _purpose = [circuitString substringWithRange:[matches.firstObject rangeAtIndex:1]];
+            _purpose = [circuitString substringWithRange:[match rangeAtIndex:1]];
         }
 
-        matches = [[TORCircuit regexForOption:@"HS_STATE"]
-                   matchesInString:circuitString options:0 range:range];
+        match = [[TORCircuit regexForOption:@"HS_STATE"]
+                    matchesInString:circuitString options:0 range:range].firstObject;
 
-        if (matches.firstObject.numberOfRanges > 1)
+        if (match && [match rangeAtIndex:1].location != NSNotFound)
         {
-            _hsState = [circuitString substringWithRange:[matches.firstObject rangeAtIndex:1]];
+            _hsState = [circuitString substringWithRange:[match rangeAtIndex:1]];
         }
 
-        matches = [[TORCircuit regexForOption:@"REND_QUERY"]
-                   matchesInString:circuitString options:0 range:range];
+        match = [[TORCircuit regexForOption:@"REND_QUERY"]
+                    matchesInString:circuitString options:0 range:range].firstObject;
 
-        if (matches.firstObject.numberOfRanges > 1)
+        if (match && [match rangeAtIndex:1].location != NSNotFound)
         {
-            _rendQuery = [circuitString substringWithRange:[matches.firstObject rangeAtIndex:1]];
+            _rendQuery = [circuitString substringWithRange:[match rangeAtIndex:1]];
         }
 
-        matches = [[TORCircuit regexForOption:@"TIME_CREATED"]
-                   matchesInString:circuitString options:0 range:range];
+        match = [[TORCircuit regexForOption:@"TIME_CREATED"]
+                    matchesInString:circuitString options:0 range:range].firstObject;
 
-        if (matches.firstObject.numberOfRanges > 1)
+        if (match && [match rangeAtIndex:1].location != NSNotFound)
         {
             _timeCreated = [TORCircuit.timestampFormatter dateFromString:
-                            [circuitString substringWithRange:[matches.firstObject rangeAtIndex:1]]];
+                            [circuitString substringWithRange:[match rangeAtIndex:1]]];
         }
 
-        matches = [[TORCircuit regexForOption:@"REASON"]
-                   matchesInString:circuitString options:0 range:range];
+        match = [[TORCircuit regexForOption:@"REASON"]
+                    matchesInString:circuitString options:0 range:range].firstObject;
 
-        if (matches.firstObject.numberOfRanges > 1)
+        if (match && [match rangeAtIndex:1].location != NSNotFound)
         {
-            _reason = [circuitString substringWithRange:[matches.firstObject rangeAtIndex:1]];
+            _reason = [circuitString substringWithRange:[match rangeAtIndex:1]];
         }
 
-        matches = [[TORCircuit regexForOption:@"REMOTE_REASON"]
-                   matchesInString:circuitString options:0 range:range];
+        match = [[TORCircuit regexForOption:@"REMOTE_REASON"]
+                    matchesInString:circuitString options:0 range:range].firstObject;
 
-        if (matches.firstObject.numberOfRanges > 1)
+        if (match && [match rangeAtIndex:1].location != NSNotFound)
         {
-            _remoteReason = [circuitString substringWithRange:[matches.firstObject rangeAtIndex:1]];
+            _remoteReason = [circuitString substringWithRange:[match rangeAtIndex:1]];
         }
 
-        matches = [[TORCircuit regexForOption:@"SOCKS_USERNAME"]
-                   matchesInString:circuitString options:0 range:range];
+        match = [[TORCircuit regexForOption:@"SOCKS_USERNAME"]
+                    matchesInString:circuitString options:0 range:range].firstObject;
 
-        if (matches.firstObject.numberOfRanges > 1)
+        if (match && [match rangeAtIndex:1].location != NSNotFound)
         {
-            _socksUsername = [[circuitString substringWithRange:[matches.firstObject rangeAtIndex:1]]
+            _socksUsername = [[circuitString substringWithRange:[match rangeAtIndex:1]]
                               stringByTrimmingCharactersInSet:NSCharacterSet.doubleQuote];
         }
 
-        matches = [[TORCircuit regexForOption:@"SOCKS_PASSWORD"]
-                   matchesInString:circuitString options:0 range:range];
+        match = [[TORCircuit regexForOption:@"SOCKS_PASSWORD"]
+                    matchesInString:circuitString options:0 range:range].firstObject;
 
-        if (matches.firstObject.numberOfRanges > 1)
+        if (match && [match rangeAtIndex:1].location != NSNotFound)
         {
-            _socksPassword = [[circuitString substringWithRange:[matches.firstObject rangeAtIndex:1]]
+            _socksPassword = [[circuitString substringWithRange:[match rangeAtIndex:1]]
                               stringByTrimmingCharactersInSet:NSCharacterSet.doubleQuote];
         }
     }
 
     return self;
+}
+
+
+// MARK: NSSecureCoding
+
++ (BOOL)supportsSecureCoding
+{
+  return YES;
+}
+
+- (id)initWithCoder:(NSCoder *)coder
+{
+    if ((self = [super init]))
+    {
+        _raw = [coder decodeObjectOfClass:NSString.class forKey:@"raw"];
+        _circuitId = [coder decodeObjectOfClass:NSString.class forKey:@"circuitId"];
+        _status = [coder decodeObjectOfClass:NSString.class forKey:@"status"];
+        _nodes = [coder decodeObjectOfClasses:[NSSet setWithArray:@[NSArray.class, TORNode.class]] forKey:@"nodes"];
+        _buildFlags = [coder decodeObjectOfClasses:[NSSet setWithArray:@[NSArray.class, NSString.class]] forKey:@"buildFlags"];
+        _purpose = [coder decodeObjectOfClass:NSString.class forKey:@"purpose"];
+        _hsState = [coder decodeObjectOfClass:NSString.class forKey:@"hsState"];
+        _rendQuery = [coder decodeObjectOfClass:NSString.class forKey:@"rendQuery"];
+        _timeCreated = [coder decodeObjectOfClass:NSDate.class forKey:@"timeCreated"];
+        _reason = [coder decodeObjectOfClass:NSString.class forKey:@"reason"];
+        _remoteReason = [coder decodeObjectOfClass:NSString.class forKey:@"remoteReason"];
+        _socksUsername = [coder decodeObjectOfClass:NSString.class forKey:@"socksUsername"];
+        _socksPassword = [coder decodeObjectOfClass:NSString.class forKey:@"socksPassword"];
+    }
+
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)coder
+{
+    [coder encodeObject:self.raw forKey:@"raw"];
+    [coder encodeObject:self.circuitId forKey:@"circuitId"];
+    [coder encodeObject:self.status forKey:@"status"];
+    [coder encodeObject:self.nodes forKey:@"nodes"];
+    [coder encodeObject:self.buildFlags forKey:@"buildFlags"];
+    [coder encodeObject:self.purpose forKey:@"purpose"];
+    [coder encodeObject:self.hsState forKey:@"hsState"];
+    [coder encodeObject:self.rendQuery forKey:@"rendQuery"];
+    [coder encodeObject:self.timeCreated forKey:@"timeCreated"];
+    [coder encodeObject:self.reason forKey:@"reason"];
+    [coder encodeObject:self.remoteReason forKey:@"remoteReason"];
+    [coder encodeObject:self.socksUsername forKey:@"socksUsername"];
+    [coder encodeObject:self.socksPassword forKey:@"socksPassword"];
 }
 
 
