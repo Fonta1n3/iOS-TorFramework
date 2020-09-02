@@ -1,8 +1,5 @@
 # Tor.framework
 
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) 
-[![Travis CI](https://img.shields.io/travis/iCepa/Tor.framework.svg)](https://travis-ci.org/iCepa/Tor.framework)
-
 Tor.framework is the easiest way to embed Tor in your iOS application. The API is *not* stable yet, and subject to change.
 
 Currently, the framework compiles in static versions of `tor`, `libevent`, `openssl`, and `liblzma`:
@@ -21,6 +18,25 @@ Currently, the framework compiles in static versions of `tor`, `libevent`, `open
 - `autoconf`,  `automake`,  `libtool` and  `gettext` in your `PATH`
 
 ## Installation
+
+✅ **Note from Blockchain Commons:** This fork of Tor.framework includes a shell script that builds an XCFramework that supports iOS devices, the iOS Simulator, and Mac Catalyst builds. You **do not** use Carthage to build this. Here are the instructions, assuming the other requirements for build tools below have been met:
+
+```bash
+git clone git@github.com:BlockchainCommons/iOS-TorFramework
+
+cd iOS-TorFramework
+
+git submodule init
+git submodule update
+
+./build-xcframework.sh
+```
+
+The built XCFramework will be found in `iOS-TorFramework/build/Tor.xcframework`.
+
+As of this time, this special build is intended to meet the needs of iOS and iOS-Catalyst developers. The XCFramework does not include builds for native MacOS, and it does not yet integrate with the testing target in the XCode project. The script also makes no effort to be efficient about rebuilds and will rebuild almost everything every time it is run.
+
+---
 
 Embedded frameworks require a minimum deployment target of iOS 8 or OS X Mavericks (10.9).
 
