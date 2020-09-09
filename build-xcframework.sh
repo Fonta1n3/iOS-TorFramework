@@ -238,20 +238,20 @@ build_deps()
   build_openssl ${IOS_ARM64_PARAMS[@]}
   build_openssl ${MAC_CATALYST_X86_64_PARAMS[@]}
   build_openssl ${IOS_SIMULATOR_X86_64_PARAMS[@]}
-  # build_openssl ${IOS_ARMV7_PARAMS[@]}
-  # build_openssl ${IOS_SIMULATOR_I386_PARAMS[@]}
-
+  # # build_openssl ${IOS_ARMV7_PARAMS[@]}
+  # # build_openssl ${IOS_SIMULATOR_I386_PARAMS[@]}
+  #
   build_libevent ${IOS_ARM64_PARAMS[@]}
   build_libevent ${MAC_CATALYST_X86_64_PARAMS[@]}
   build_libevent ${IOS_SIMULATOR_X86_64_PARAMS[@]}
-  # build_libevent ${IOS_ARMV7_PARAMS[@]}
-  # build_libevent ${IOS_SIMULATOR_I386_PARAMS[@]}
-
+  # # build_libevent ${IOS_ARMV7_PARAMS[@]}
+  # # build_libevent ${IOS_SIMULATOR_I386_PARAMS[@]}
+  #
   build_tor ${IOS_ARM64_PARAMS[@]}
   build_tor ${MAC_CATALYST_X86_64_PARAMS[@]}
   build_tor ${IOS_SIMULATOR_X86_64_PARAMS[@]}
-  # build_tor ${IOS_ARMV7_PARAMS[@]}
-  # build_tor ${IOS_SIMULATOR_I386_PARAMS[@]}
+  # # build_tor ${IOS_ARMV7_PARAMS[@]}
+  # # build_tor ${IOS_SIMULATOR_I386_PARAMS[@]}
 )
 
 build_framework()
@@ -279,9 +279,10 @@ build_framework()
     SUPPORTS_MACCATALYST=${XC_CATALYST} \
     IPHONEOS_DEPLOYMENT_TARGET=10.0 \
     OTHER_LDFLAGS="\
-      -L${XC_BUILD_DIR}/tor \
+      -L${XC_BUILD_DIR}/liblzma/lib \
       -L${XC_BUILD_DIR}/openssl/lib \
       -L${XC_BUILD_DIR}/libevent/lib \
+      -L${XC_BUILD_DIR}/tor \
       "
 }
 
@@ -302,6 +303,10 @@ build_xcframework()
   -framework ${BUILD_ROOT}/mac-catalyst-x86_64/Tor.xcarchive/Products/@rpath/Tor.framework \
   -framework ${BUILD_ROOT}/ios-simulator-x86_64/Tor.xcarchive/Products/@rpath/Tor.framework \
   -output ${BUILD_ROOT}/Tor.xcframework
+
+  # xcodebuild -create-xcframework \
+  # -framework ${BUILD_ROOT}/mac-catalyst-x86_64/Tor.xcarchive/Products/@rpath/Tor.framework \
+  # -output ${BUILD_ROOT}/Tor.xcframework
 
   # -framework ${BUILD_ROOT}/ios-simulator-i386/Tor.xcarchive/Products/@rpath/Tor.framework \
   # -framework ${BUILD_ROOT}/ios-armv7/Tor.xcarchive/Products/@rpath/Tor.framework \

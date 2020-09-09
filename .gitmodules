@@ -3,7 +3,7 @@
 	url = https://github.com/libevent/libevent.git
 [submodule "Tor/tor"]
 	path = Tor/tor
-	url = https://git.torproject.org/tor.git
+	url = https://github.com/BlockchainCommons/bc-tor.git
 	ignore = dirty
 [submodule "Tor/openssl"]
 	path = Tor/openssl
@@ -13,4 +13,4 @@
 	url = https://github.com/jspahrsummers/xcconfigs.git
 [submodule "Tor/xz"]
 	path = Tor/xz
-	url = https://git.tukaani.org/xz.git
+	url = https://github.com/BlockchainCommons/bc-xz.git

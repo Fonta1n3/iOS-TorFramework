@@ -3,22 +3,8 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
-
-/* Begin PBXAggregateTarget section */
-		8A00200C2171261300B1ABBC /* GenFrameworkVersion */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 8A00200F2171261300B1ABBC /* Build configuration list for PBXAggregateTarget "GenFrameworkVersion" */;
-			buildPhases = (
-				8A53A12D2171262900938D1D /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = GenFrameworkVersion;
-			productName = GenFrameworkVersion;
-		};
-/* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		8A44D7431FA3C9FC00C4E1C0 /* liblzma.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A44D7411FA3C9FC00C4E1C0 /* liblzma.a */; };
@@ -163,62 +149,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8A44D7361FA3C44800C4E1C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0FBEC641B79BAD7005C7577 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8A44D72E1FA3C41100C4E1C0;
-			remoteInfo = "xz-iOS";
-		};
-		8A44D7381FA3C44E00C4E1C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0FBEC641B79BAD7005C7577 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8A44D7321FA3C41700C4E1C0;
-			remoteInfo = "xz-Mac";
-		};
-		8A53A12E2171264B00938D1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0FBEC641B79BAD7005C7577 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8A00200C2171261300B1ABBC;
-			remoteInfo = GenFrameworkVersion;
-		};
-		8A53A1302171265000938D1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0FBEC641B79BAD7005C7577 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8A00200C2171261300B1ABBC;
-			remoteInfo = GenFrameworkVersion;
-		};
-		D0198AAC1C63DF5700EA0043 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0FBEC641B79BAD7005C7577 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D0198A9C1C63DA5D00EA0043;
-			remoteInfo = "openssl-Mac";
-		};
-		D0198AAE1C63DF6000EA0043 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0FBEC641B79BAD7005C7577 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D0198AA01C63DE2100EA0043;
-			remoteInfo = "libevent-Mac";
-		};
-		D0198AB01C63DF6000EA0043 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0FBEC641B79BAD7005C7577 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D0198A9C1C63DA5D00EA0043;
-			remoteInfo = "openssl-Mac";
-		};
-		D0198AB21C63DF9A00EA0043 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0FBEC641B79BAD7005C7577 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D0198AA41C63DEFF00EA0043;
-			remoteInfo = "tor-Mac";
-		};
 		D08892F01DDA6A5E009DB0CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D0FBEC641B79BAD7005C7577 /* Project object */;
@@ -240,40 +170,12 @@
 			remoteGlobalIDString = D0B283B71B79D7FA00D0DDA9;
 			remoteInfo = Host;
 		};
-		D0B283A81B79C90400D0DDA9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0FBEC641B79BAD7005C7577 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D0FBEC8F1B79BC2A005C7577;
-			remoteInfo = openssl;
-		};
-		D0B59CF31B8D7DFA00AFDFF9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0FBEC641B79BAD7005C7577 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D0FBEC871B79BC19005C7577;
-			remoteInfo = tor;
-		};
 		D0FBEC821B79BB01005C7577 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D0FBEC641B79BAD7005C7577 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D0FBEC6C1B79BAD7005C7577;
 			remoteInfo = Tor;
-		};
-		D0FBECC21B79C54E005C7577 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0FBEC641B79BAD7005C7577 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D0FBEC8B1B79BC22005C7577;
-			remoteInfo = libevent;
-		};
-		D0FBECC41B79C54E005C7577 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0FBEC641B79BAD7005C7577 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D0FBEC8F1B79BC2A005C7577;
-			remoteInfo = openssl;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -763,131 +665,6 @@
 		};
 /* End PBXHeadersBuildPhase section */
 
-/* Begin PBXLegacyTarget section */
-		8A44D72E1FA3C41100C4E1C0 /* xz-iOS */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "\"$(SRCROOT)/Tor/xz.sh\"";
-			buildConfigurationList = 8A44D72F1FA3C41100C4E1C0 /* Build configuration list for PBXLegacyTarget "xz-iOS" */;
-			buildPhases = (
-			);
-			buildToolPath = /bin/bash;
-			buildWorkingDirectory = Tor/xz;
-			dependencies = (
-			);
-			name = "xz-iOS";
-			passBuildSettingsInEnvironment = 1;
-			productName = openssl;
-		};
-		8A44D7321FA3C41700C4E1C0 /* xz-Mac */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "\"$(SRCROOT)/Tor/xz.sh\"";
-			buildConfigurationList = 8A44D7331FA3C41700C4E1C0 /* Build configuration list for PBXLegacyTarget "xz-Mac" */;
-			buildPhases = (
-			);
-			buildToolPath = /bin/bash;
-			buildWorkingDirectory = Tor/xz;
-			dependencies = (
-			);
-			name = "xz-Mac";
-			passBuildSettingsInEnvironment = 1;
-			productName = "openssl-OSX";
-		};
-		D0198A9C1C63DA5D00EA0043 /* openssl-Mac */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "\"$(SRCROOT)/Tor/openssl.sh\"";
-			buildConfigurationList = D0198A9D1C63DA5D00EA0043 /* Build configuration list for PBXLegacyTarget "openssl-Mac" */;
-			buildPhases = (
-			);
-			buildToolPath = /bin/bash;
-			buildWorkingDirectory = Tor/openssl;
-			dependencies = (
-			);
-			name = "openssl-Mac";
-			passBuildSettingsInEnvironment = 1;
-			productName = "openssl-OSX";
-		};
-		D0198AA01C63DE2100EA0043 /* libevent-Mac */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "\"$(SRCROOT)/Tor/libevent.sh\"";
-			buildConfigurationList = D0198AA11C63DE2100EA0043 /* Build configuration list for PBXLegacyTarget "libevent-Mac" */;
-			buildPhases = (
-			);
-			buildToolPath = /bin/bash;
-			buildWorkingDirectory = Tor/libevent;
-			dependencies = (
-				D0198AAD1C63DF5700EA0043 /* PBXTargetDependency */,
-			);
-			name = "libevent-Mac";
-			passBuildSettingsInEnvironment = 1;
-			productName = "libevent-OSX";
-		};
-		D0198AA41C63DEFF00EA0043 /* tor-Mac */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "\"$(SRCROOT)/Tor/tor.sh\"";
-			buildConfigurationList = D0198AA91C63DEFF00EA0043 /* Build configuration list for PBXLegacyTarget "tor-Mac" */;
-			buildPhases = (
-			);
-			buildToolPath = /bin/bash;
-			buildWorkingDirectory = Tor/tor;
-			dependencies = (
-				8A53A1312171265000938D1D /* PBXTargetDependency */,
-				8A44D7391FA3C44E00C4E1C0 /* PBXTargetDependency */,
-				D0198AAF1C63DF6000EA0043 /* PBXTargetDependency */,
-				D0198AB11C63DF6000EA0043 /* PBXTargetDependency */,
-			);
-			name = "tor-Mac";
-			passBuildSettingsInEnvironment = 1;
-			productName = tor;
-		};
-		D0FBEC871B79BC19005C7577 /* tor-iOS */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "\"$(SRCROOT)/Tor/tor.sh\"";
-			buildConfigurationList = D0FBEC881B79BC19005C7577 /* Build configuration list for PBXLegacyTarget "tor-iOS" */;
-			buildPhases = (
-			);
-			buildToolPath = /bin/bash;
-			buildWorkingDirectory = Tor/tor;
-			dependencies = (
-				8A53A12F2171264B00938D1D /* PBXTargetDependency */,
-				8A44D7371FA3C44800C4E1C0 /* PBXTargetDependency */,
-				D0FBECC31B79C54E005C7577 /* PBXTargetDependency */,
-				D0FBECC51B79C54E005C7577 /* PBXTargetDependency */,
-			);
-			name = "tor-iOS";
-			passBuildSettingsInEnvironment = 1;
-			productName = tor;
-		};
-		D0FBEC8B1B79BC22005C7577 /* libevent-iOS */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "\"$(SRCROOT)/Tor/libevent.sh\"";
-			buildConfigurationList = D0FBEC8C1B79BC22005C7577 /* Build configuration list for PBXLegacyTarget "libevent-iOS" */;
-			buildPhases = (
-			);
-			buildToolPath = /bin/bash;
-			buildWorkingDirectory = Tor/libevent;
-			dependencies = (
-				D0B283A91B79C90400D0DDA9 /* PBXTargetDependency */,
-			);
-			name = "libevent-iOS";
-			passBuildSettingsInEnvironment = 1;
-			productName = libevent;
-		};
-		D0FBEC8F1B79BC2A005C7577 /* openssl-iOS */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "\"$(SRCROOT)/Tor/openssl.sh\"";
-			buildConfigurationList = D0FBEC901B79BC2A005C7577 /* Build configuration list for PBXLegacyTarget "openssl-iOS" */;
-			buildPhases = (
-			);
-			buildToolPath = /bin/bash;
-			buildWorkingDirectory = Tor/openssl;
-			dependencies = (
-			);
-			name = "openssl-iOS";
-			passBuildSettingsInEnvironment = 1;
-			productName = openssl;
-		};
-/* End PBXLegacyTarget section */
-
 /* Begin PBXNativeTarget section */
 		D012AB841BC290D0004BE7A6 /* Tor-Mac */ = {
 			isa = PBXNativeTarget;
@@ -900,7 +677,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D0198AB31C63DF9A00EA0043 /* PBXTargetDependency */,
 			);
 			name = "Tor-Mac";
 			productName = "Tor-Mac";
@@ -970,7 +746,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D0B59CF41B8D7DFA00AFDFF9 /* PBXTargetDependency */,
 			);
 			name = "Tor-iOS";
 			productName = Tor;
@@ -1007,18 +782,8 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Conrad Kramer";
 				TargetAttributes = {
-					8A00200C2171261300B1ABBC = {
-						CreatedOnToolsVersion = 10.0;
-						ProvisioningStyle = Automatic;
-					};
 					D012AB841BC290D0004BE7A6 = {
 						CreatedOnToolsVersion = 7.1;
-					};
-					D0198A9C1C63DA5D00EA0043 = {
-						CreatedOnToolsVersion = 7.2;
-					};
-					D0198AA01C63DE2100EA0043 = {
-						CreatedOnToolsVersion = 7.2;
 					};
 					D08892E21DDA692C009DB0CD = {
 						ProvisioningStyle = Automatic;
@@ -1037,15 +802,6 @@
 					D0FBEC7B1B79BB01005C7577 = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = D0B283B71B79D7FA00D0DDA9;
-					};
-					D0FBEC871B79BC19005C7577 = {
-						CreatedOnToolsVersion = 7.0;
-					};
-					D0FBEC8B1B79BC22005C7577 = {
-						CreatedOnToolsVersion = 7.0;
-					};
-					D0FBEC8F1B79BC2A005C7577 = {
-						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
@@ -1068,15 +824,6 @@
 				D0928DB31C7A99C300D15679 /* TorTests-Mac */,
 				D0B283B71B79D7FA00D0DDA9 /* Host-iOS */,
 				D08892E21DDA692C009DB0CD /* Host-Mac */,
-				D0FBEC871B79BC19005C7577 /* tor-iOS */,
-				D0198AA41C63DEFF00EA0043 /* tor-Mac */,
-				D0FBEC8B1B79BC22005C7577 /* libevent-iOS */,
-				D0198AA01C63DE2100EA0043 /* libevent-Mac */,
-				D0FBEC8F1B79BC2A005C7577 /* openssl-iOS */,
-				D0198A9C1C63DA5D00EA0043 /* openssl-Mac */,
-				8A44D72E1FA3C41100C4E1C0 /* xz-iOS */,
-				8A44D7321FA3C41700C4E1C0 /* xz-Mac */,
-				8A00200C2171261300B1ABBC /* GenFrameworkVersion */,
 			);
 		};
 /* End PBXProject section */
@@ -1120,26 +867,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		8A53A12D2171262900938D1D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$SRCROOT\"/Tor/version.sh\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D012AB801BC290D0004BE7A6 /* Sources */ = {
@@ -1207,46 +934,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8A44D7371FA3C44800C4E1C0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8A44D72E1FA3C41100C4E1C0 /* xz-iOS */;
-			targetProxy = 8A44D7361FA3C44800C4E1C0 /* PBXContainerItemProxy */;
-		};
-		8A44D7391FA3C44E00C4E1C0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8A44D7321FA3C41700C4E1C0 /* xz-Mac */;
-			targetProxy = 8A44D7381FA3C44E00C4E1C0 /* PBXContainerItemProxy */;
-		};
-		8A53A12F2171264B00938D1D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8A00200C2171261300B1ABBC /* GenFrameworkVersion */;
-			targetProxy = 8A53A12E2171264B00938D1D /* PBXContainerItemProxy */;
-		};
-		8A53A1312171265000938D1D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8A00200C2171261300B1ABBC /* GenFrameworkVersion */;
-			targetProxy = 8A53A1302171265000938D1D /* PBXContainerItemProxy */;
-		};
-		D0198AAD1C63DF5700EA0043 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D0198A9C1C63DA5D00EA0043 /* openssl-Mac */;
-			targetProxy = D0198AAC1C63DF5700EA0043 /* PBXContainerItemProxy */;
-		};
-		D0198AAF1C63DF6000EA0043 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D0198AA01C63DE2100EA0043 /* libevent-Mac */;
-			targetProxy = D0198AAE1C63DF6000EA0043 /* PBXContainerItemProxy */;
-		};
-		D0198AB11C63DF6000EA0043 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D0198A9C1C63DA5D00EA0043 /* openssl-Mac */;
-			targetProxy = D0198AB01C63DF6000EA0043 /* PBXContainerItemProxy */;
-		};
-		D0198AB31C63DF9A00EA0043 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D0198AA41C63DEFF00EA0043 /* tor-Mac */;
-			targetProxy = D0198AB21C63DF9A00EA0043 /* PBXContainerItemProxy */;
-		};
 		D08892F11DDA6A5E009DB0CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D08892E21DDA692C009DB0CD /* Host-Mac */;
@@ -1262,87 +949,14 @@
 			target = D0B283B71B79D7FA00D0DDA9 /* Host-iOS */;
 			targetProxy = D0AE19341B79D9AE0042BBC8 /* PBXContainerItemProxy */;
 		};
-		D0B283A91B79C90400D0DDA9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D0FBEC8F1B79BC2A005C7577 /* openssl-iOS */;
-			targetProxy = D0B283A81B79C90400D0DDA9 /* PBXContainerItemProxy */;
-		};
-		D0B59CF41B8D7DFA00AFDFF9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilter = ios;
-			target = D0FBEC871B79BC19005C7577 /* tor-iOS */;
-			targetProxy = D0B59CF31B8D7DFA00AFDFF9 /* PBXContainerItemProxy */;
-		};
 		D0FBEC831B79BB01005C7577 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D0FBEC6C1B79BAD7005C7577 /* Tor-iOS */;
 			targetProxy = D0FBEC821B79BB01005C7577 /* PBXContainerItemProxy */;
 		};
-		D0FBECC31B79C54E005C7577 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D0FBEC8B1B79BC22005C7577 /* libevent-iOS */;
-			targetProxy = D0FBECC21B79C54E005C7577 /* PBXContainerItemProxy */;
-		};
-		D0FBECC51B79C54E005C7577 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D0FBEC8F1B79BC2A005C7577 /* openssl-iOS */;
-			targetProxy = D0FBECC41B79C54E005C7577 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		8A00200D2171261300B1ABBC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		8A00200E2171261300B1ABBC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		8A44D7301FA3C41100C4E1C0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D03196E41F647A7100720808 /* iOS-StaticLibrary.xcconfig */;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = liblzma;
-			};
-			name = Debug;
-		};
-		8A44D7311FA3C41100C4E1C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = liblzma;
-			};
-			name = Release;
-		};
-		8A44D7341FA3C41700C4E1C0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D03196E51F647A7F00720808 /* Mac-StaticLibrary.xcconfig */;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = liblzma;
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		8A44D7351FA3C41700C4E1C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = liblzma;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
 		D012AB8B1BC290D0004BE7A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0401AD71D2CB8C300602E9B /* Tor-Mac.xcconfig */;
@@ -1356,67 +970,6 @@
 			baseConfigurationReference = D0401AD71D2CB8C300602E9B /* Tor-Mac.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
-			};
-			name = Release;
-		};
-		D0198A9E1C63DA5D00EA0043 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D03196E51F647A7F00720808 /* Mac-StaticLibrary.xcconfig */;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = openssl;
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		D0198A9F1C63DA5D00EA0043 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = openssl;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		D0198AA21C63DE2100EA0043 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D03196E51F647A7F00720808 /* Mac-StaticLibrary.xcconfig */;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				OTHER_LDFLAGS = "-L$(BUILT_PRODUCTS_DIR)";
-				PRODUCT_NAME = libevent;
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		D0198AA31C63DE2100EA0043 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				OTHER_LDFLAGS = "-L$(BUILT_PRODUCTS_DIR)";
-				PRODUCT_NAME = libevent;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		D0198AAA1C63DEFF00EA0043 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D03196E51F647A7F00720808 /* Mac-StaticLibrary.xcconfig */;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				OTHER_LDFLAGS = "-L$(BUILT_PRODUCTS_DIR)";
-				PRODUCT_NAME = tor;
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		D0198AAB1C63DEFF00EA0043 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				OTHER_LDFLAGS = "-L$(BUILT_PRODUCTS_DIR)";
-				PRODUCT_NAME = tor;
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -1456,10 +1009,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Tests/Host-Mac/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = org.torproject.Host;
 				PRODUCT_NAME = Host;
@@ -1474,10 +1024,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Tests/Host-Mac/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = org.torproject.Host;
 				PRODUCT_NAME = Host;
@@ -1491,10 +1038,7 @@
 				CODE_SIGN_ENTITLEMENTS = Host.entitlements;
 				INFOPLIST_FILE = "Tests/Host-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.torproject.Host;
 				PRODUCT_NAME = Host;
 				SDKROOT = iphoneos;
@@ -1509,10 +1053,7 @@
 				CODE_SIGN_ENTITLEMENTS = Host.entitlements;
 				INFOPLIST_FILE = "Tests/Host-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.torproject.Host;
 				PRODUCT_NAME = Host;
 				SDKROOT = iphoneos;
@@ -1574,11 +1115,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.torproject.Tests;
 				PRODUCT_NAME = TorTests;
 				SDKROOT = iphoneos;
@@ -1591,11 +1128,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.torproject.Tests;
 				PRODUCT_NAME = TorTests;
 				SDKROOT = iphoneos;
@@ -1603,119 +1136,14 @@
 			};
 			name = Release;
 		};
-		D0FBEC891B79BC19005C7577 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D03196E41F647A7100720808 /* iOS-StaticLibrary.xcconfig */;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = tor;
-			};
-			name = Debug;
-		};
-		D0FBEC8A1B79BC19005C7577 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = tor;
-			};
-			name = Release;
-		};
-		D0FBEC8D1B79BC22005C7577 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D03196E41F647A7100720808 /* iOS-StaticLibrary.xcconfig */;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = libevent;
-			};
-			name = Debug;
-		};
-		D0FBEC8E1B79BC22005C7577 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = libevent;
-			};
-			name = Release;
-		};
-		D0FBEC911B79BC2A005C7577 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D03196E41F647A7100720808 /* iOS-StaticLibrary.xcconfig */;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = openssl;
-			};
-			name = Debug;
-		};
-		D0FBEC921B79BC2A005C7577 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = openssl;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8A00200F2171261300B1ABBC /* Build configuration list for PBXAggregateTarget "GenFrameworkVersion" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8A00200D2171261300B1ABBC /* Debug */,
-				8A00200E2171261300B1ABBC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8A44D72F1FA3C41100C4E1C0 /* Build configuration list for PBXLegacyTarget "xz-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8A44D7301FA3C41100C4E1C0 /* Debug */,
-				8A44D7311FA3C41100C4E1C0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8A44D7331FA3C41700C4E1C0 /* Build configuration list for PBXLegacyTarget "xz-Mac" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8A44D7341FA3C41700C4E1C0 /* Debug */,
-				8A44D7351FA3C41700C4E1C0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		D012AB8A1BC290D0004BE7A6 /* Build configuration list for PBXNativeTarget "Tor-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D012AB8B1BC290D0004BE7A6 /* Debug */,
 				D012AB8C1BC290D0004BE7A6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0198A9D1C63DA5D00EA0043 /* Build configuration list for PBXLegacyTarget "openssl-Mac" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0198A9E1C63DA5D00EA0043 /* Debug */,
-				D0198A9F1C63DA5D00EA0043 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0198AA11C63DE2100EA0043 /* Build configuration list for PBXLegacyTarget "libevent-Mac" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0198AA21C63DE2100EA0043 /* Debug */,
-				D0198AA31C63DE2100EA0043 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0198AA91C63DEFF00EA0043 /* Build configuration list for PBXLegacyTarget "tor-Mac" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0198AAA1C63DEFF00EA0043 /* Debug */,
-				D0198AAB1C63DEFF00EA0043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1770,33 +1198,6 @@
 			buildConfigurations = (
 				D0FBEC851B79BB01005C7577 /* Debug */,
 				D0FBEC861B79BB01005C7577 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0FBEC881B79BC19005C7577 /* Build configuration list for PBXLegacyTarget "tor-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0FBEC891B79BC19005C7577 /* Debug */,
-				D0FBEC8A1B79BC19005C7577 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0FBEC8C1B79BC22005C7577 /* Build configuration list for PBXLegacyTarget "libevent-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0FBEC8D1B79BC22005C7577 /* Debug */,
-				D0FBEC8E1B79BC22005C7577 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0FBEC901B79BC2A005C7577 /* Build configuration list for PBXLegacyTarget "openssl-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0FBEC911B79BC2A005C7577 /* Debug */,
-				D0FBEC921B79BC2A005C7577 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
