@@ -25,6 +25,8 @@ build_init()
   export LDFLAGS="-arch ${ARCH} ${BITCODE}"
   export CC="$(xcrun --sdk ${SDK} -f clang) -arch ${ARCH} -isysroot ${SDK_PATH}"
   export CXX="$(xcrun --sdk ${SDK} -f clang++) -arch ${ARCH} -isysroot ${SDK_PATH}"
+  export LIBTOOL=`which glibtool`
+  export LIBTOOLIZE=`which glibtoolize`
 }
 
 build_xz()

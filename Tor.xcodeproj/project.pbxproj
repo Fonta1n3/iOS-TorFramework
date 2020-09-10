@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		031440442509F8EB002A89AC /* GenFrameworkVersion */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 031440472509F8EB002A89AC /* Build configuration list for PBXAggregateTarget "GenFrameworkVersion" */;
+			buildPhases = (
+				031440482509F8F1002A89AC /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = GenFrameworkVersion;
+			productName = GenFrameworkVersion;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		8A44D7431FA3C9FC00C4E1C0 /* liblzma.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A44D7411FA3C9FC00C4E1C0 /* liblzma.a */; };
 		8A44D7441FA3D4E400C4E1C0 /* liblzma.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A44D7411FA3C9FC00C4E1C0 /* liblzma.a */; };
@@ -149,6 +163,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		031440492509F8FD002A89AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0FBEC641B79BAD7005C7577 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 031440442509F8EB002A89AC;
+			remoteInfo = GenFrameworkVersion;
+		};
+		0314404B2509F901002A89AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0FBEC641B79BAD7005C7577 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 031440442509F8EB002A89AC;
+			remoteInfo = GenFrameworkVersion;
+		};
 		D08892F01DDA6A5E009DB0CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D0FBEC641B79BAD7005C7577 /* Project object */;
@@ -677,6 +705,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				0314404C2509F901002A89AC /* PBXTargetDependency */,
 			);
 			name = "Tor-Mac";
 			productName = "Tor-Mac";
@@ -746,6 +775,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				0314404A2509F8FD002A89AC /* PBXTargetDependency */,
 			);
 			name = "Tor-iOS";
 			productName = Tor;
@@ -782,6 +812,11 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Conrad Kramer";
 				TargetAttributes = {
+					031440442509F8EB002A89AC = {
+						CreatedOnToolsVersion = 11.7;
+						DevelopmentTeam = YZHG975W3A;
+						ProvisioningStyle = Automatic;
+					};
 					D012AB841BC290D0004BE7A6 = {
 						CreatedOnToolsVersion = 7.1;
 					};
@@ -824,6 +859,7 @@
 				D0928DB31C7A99C300D15679 /* TorTests-Mac */,
 				D0B283B71B79D7FA00D0DDA9 /* Host-iOS */,
 				D08892E21DDA692C009DB0CD /* Host-Mac */,
+				031440442509F8EB002A89AC /* GenFrameworkVersion */,
 			);
 		};
 /* End PBXProject section */
@@ -867,6 +903,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		031440482509F8F1002A89AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT\"/Tor/version.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D012AB801BC290D0004BE7A6 /* Sources */ = {
@@ -934,6 +990,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0314404A2509F8FD002A89AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 031440442509F8EB002A89AC /* GenFrameworkVersion */;
+			targetProxy = 031440492509F8FD002A89AC /* PBXContainerItemProxy */;
+		};
+		0314404C2509F901002A89AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 031440442509F8EB002A89AC /* GenFrameworkVersion */;
+			targetProxy = 0314404B2509F901002A89AC /* PBXContainerItemProxy */;
+		};
 		D08892F11DDA6A5E009DB0CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D08892E21DDA692C009DB0CD /* Host-Mac */;
@@ -957,6 +1023,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		031440452509F8EB002A89AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YZHG975W3A;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		031440462509F8EB002A89AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YZHG975W3A;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D012AB8B1BC290D0004BE7A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0401AD71D2CB8C300602E9B /* Tor-Mac.xcconfig */;
@@ -1139,6 +1223,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		031440472509F8EB002A89AC /* Build configuration list for PBXAggregateTarget "GenFrameworkVersion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031440452509F8EB002A89AC /* Debug */,
+				031440462509F8EB002A89AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D012AB8A1BC290D0004BE7A6 /* Build configuration list for PBXNativeTarget "Tor-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

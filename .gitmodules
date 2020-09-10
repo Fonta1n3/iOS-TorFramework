@@ -14,3 +14,4 @@
 [submodule "Tor/xz"]
 	path = Tor/xz
 	url = https://github.com/BlockchainCommons/bc-xz.git
+	ignore = dirty
