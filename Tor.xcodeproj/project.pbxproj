@@ -106,6 +106,8 @@
 		A083F646242A6AF8004EF128 /* libtor-buf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E9798522BA57DE00F98556 /* libtor-buf.a */; };
 		A083F647242A6B06004EF128 /* libtor-geoip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A044F45321F9F2F60094F807 /* libtor-geoip.a */; };
 		A088DB0722E5F6B70018EF4D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A088DB0622E5F6B70018EF4D /* CFNetwork.framework */; };
+		A0BDED912518CD8F00912E7F /* libtor-llharden.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BDED902518CD4400912E7F /* libtor-llharden.a */; };
+		A0BDED922518CD9000912E7F /* libtor-llharden.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BDED902518CD4400912E7F /* libtor-llharden.a */; };
 		A0E9798722BA57DE00F98556 /* libtor-buf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E9798522BA57DE00F98556 /* libtor-buf.a */; };
 		A0E9EF4122E5D729005F6D7B /* libtor-version.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E9EF4022E5D729005F6D7B /* libtor-version.a */; };
 		A0F3439D23A1B1A400C99EEC /* NSCharacterSet+PredefinedSets.h in Headers */ = {isa = PBXBuildFile; fileRef = A0F3439B23A1B1A400C99EEC /* NSCharacterSet+PredefinedSets.h */; };
@@ -257,6 +259,7 @@
 		A082A196239E968700A0091A /* TORNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TORNode.m; sourceTree = "<group>"; };
 		A088DB0622E5F6B70018EF4D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A088DB0822E603270018EF4D /* Tor.podspec */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = Tor.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0BDED902518CD4400912E7F /* libtor-llharden.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libtor-llharden.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DE78A121F73B8200B6B68B /* Cartfile.private */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
 		A0DE78A221F73B8200B6B68B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A0DE78A321F73B8200B6B68B /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
@@ -335,6 +338,7 @@
 				8A9D5D26216BE12100B0BB19 /* libtor-fs.a in Frameworks */,
 				8A9D5D1A216BE12100B0BB19 /* libtor-encoding.a in Frameworks */,
 				8A9D5D2E216BE12100B0BB19 /* libtor-sandbox.a in Frameworks */,
+				A0BDED922518CD9000912E7F /* libtor-llharden.a in Frameworks */,
 				8A9D5D19216BE12100B0BB19 /* libtor-container.a in Frameworks */,
 				8A9D5D2F216BE12100B0BB19 /* libtor-net.a in Frameworks */,
 				8A9D5D2D216BE12100B0BB19 /* libtor-thread.a in Frameworks */,
@@ -403,6 +407,7 @@
 				8A9D5D3B216BE17400B0BB19 /* libcurve25519_donna.a in Frameworks */,
 				A044F45421F9F2F60094F807 /* libtor-geoip.a in Frameworks */,
 				8A9D5D54216BE17400B0BB19 /* libtor-process.a in Frameworks */,
+				A0BDED912518CD8F00912E7F /* libtor-llharden.a in Frameworks */,
 				A0E9798722BA57DE00F98556 /* libtor-buf.a in Frameworks */,
 				8A9D5D5A216BE17400B0BB19 /* libtor-time.a in Frameworks */,
 				8A9D5D4A216BE17400B0BB19 /* libtor-fs.a in Frameworks */,
@@ -640,6 +645,7 @@
 				8A9D5D11216BE12100B0BB19 /* libtor-wallclock.a */,
 				8A9D5CFD216BE12000B0BB19 /* libtor-err.a */,
 				A0E9EF4022E5D729005F6D7B /* libtor-version.a */,
+				A0BDED902518CD4400912E7F /* libtor-llharden.a */,
 				8A9D5D09216BE12000B0BB19 /* libtor-intmath.a */,
 				8A9D5D10216BE12100B0BB19 /* libtor-ctime.a */,
 				8A9D5D02216BE12000B0BB19 /* libor-trunnel.a */,
@@ -809,7 +815,7 @@
 			attributes = {
 				DefaultBuildSystemTypeForWorkspace = Latest;
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Conrad Kramer";
 				TargetAttributes = {
 					031440442509F8EB002A89AC = {
@@ -1121,7 +1127,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Host.entitlements;
 				INFOPLIST_FILE = "Tests/Host-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.torproject.Host;
 				PRODUCT_NAME = Host;
@@ -1136,7 +1142,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Host.entitlements;
 				INFOPLIST_FILE = "Tests/Host-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.torproject.Host;
 				PRODUCT_NAME = Host;
@@ -1155,6 +1161,7 @@
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1171,6 +1178,7 @@
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

@@ -1,6 +1,6 @@
 Pod::Spec.new do |m|
 
-  version = '403.6.1'
+  version = '404.6.1'
 
   m.name    = 'Tor'
   m.version = version
@@ -8,7 +8,7 @@ Pod::Spec.new do |m|
   m.summary     = 'Tor.framework is the easiest way to embed Tor in your iOS application.'
   m.description = 'Tor.framework is the easiest way to embed Tor in your iOS application. Currently, the framework compiles in static versions of tor, libevent, openssl, and liblzma.'
   m.homepage    = 'https://github.com/iCepa/Tor.framework'
-  m.license     = { :type => 'MIT', :file => 'LICENSE' }
+  m.license     = { :type => 'MIT' }
   m.authors     = { 'Conrad Kramer' => 'conrad@conradkramer.com',
                     'Chris Ballinger' => 'chris@chatsecure.org',
                     'Mike Tigas' => 'mike@tig.as',
