@@ -513,7 +513,7 @@ build_fat_frameworks()
 (
   progress_section "Building Fat Frameworks"
 
-  lipo_swift_framework Tor
+  build_fat_framework Tor
 )
 
 build_xcframework()
