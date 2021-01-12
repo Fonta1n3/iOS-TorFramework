@@ -561,10 +561,10 @@ build_xcframeworks()
 build_all()
 (
   CONTEXT=subshell
-  # get_dependencies
-  # build_c_libraries
-  # build_frameworks
-  # build_fat_frameworks
+  get_dependencies
+  build_c_libraries
+  build_frameworks
+  build_fat_frameworks
   build_xcframeworks
 )
 
