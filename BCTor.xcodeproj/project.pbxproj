@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7989DC2C25AC196E00790BDE /* BCTor.h in Headers */ = {isa = PBXBuildFile; fileRef = 7989DC2A25AC196E00790BDE /* BCTor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7989DC3725AC1A0300790BDE /* orconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7989DC3625AC1A0300790BDE /* orconfig.h */; };
+		7989DC4825AC1A6300790BDE /* TORNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989DC3C25AC1A6300790BDE /* TORNode.m */; };
+		7989DC4925AC1A6300790BDE /* TORCircuit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7989DC3D25AC1A6300790BDE /* TORCircuit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7989DC4A25AC1A6300790BDE /* TORCircuit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989DC3E25AC1A6300790BDE /* TORCircuit.m */; };
+		7989DC4B25AC1A6300790BDE /* TORThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 7989DC3F25AC1A6300790BDE /* TORThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7989DC4C25AC1A6300790BDE /* TORConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989DC4025AC1A6300790BDE /* TORConfiguration.m */; };
+		7989DC4D25AC1A6300790BDE /* TORController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989DC4125AC1A6300790BDE /* TORController.m */; };
+		7989DC4E25AC1A6300790BDE /* TORThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989DC4225AC1A6300790BDE /* TORThread.m */; };
+		7989DC4F25AC1A6300790BDE /* TORLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 7989DC4325AC1A6300790BDE /* TORLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7989DC5025AC1A6300790BDE /* TORConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 7989DC4425AC1A6300790BDE /* TORConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7989DC5125AC1A6300790BDE /* TORLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989DC4525AC1A6300790BDE /* TORLogging.m */; };
+		7989DC5225AC1A6300790BDE /* TORNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 7989DC4625AC1A6300790BDE /* TORNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7989DC5325AC1A6300790BDE /* TORController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7989DC4725AC1A6300790BDE /* TORController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7989DC5725AC1A7700790BDE /* NSCharacterSet+PredefinedSets.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989DC5525AC1A7700790BDE /* NSCharacterSet+PredefinedSets.m */; };
+		7989DC5825AC1A7700790BDE /* NSCharacterSet+PredefinedSets.h in Headers */ = {isa = PBXBuildFile; fileRef = 7989DC5625AC1A7700790BDE /* NSCharacterSet+PredefinedSets.h */; };
+		7989DCCF25AC226300790BDE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7989DCCD25AC224400790BDE /* libz.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7989DC2725AC196E00790BDE /* Tor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7989DC2A25AC196E00790BDE /* BCTor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCTor.h; sourceTree = "<group>"; };
+		7989DC2B25AC196E00790BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7989DC3625AC1A0300790BDE /* orconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = orconfig.h; path = tor/orconfig.h; sourceTree = "<group>"; };
+		7989DC3C25AC1A6300790BDE /* TORNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TORNode.m; sourceTree = "<group>"; };
+		7989DC3D25AC1A6300790BDE /* TORCircuit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TORCircuit.h; sourceTree = "<group>"; };
+		7989DC3E25AC1A6300790BDE /* TORCircuit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TORCircuit.m; sourceTree = "<group>"; };
+		7989DC3F25AC1A6300790BDE /* TORThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TORThread.h; sourceTree = "<group>"; };
+		7989DC4025AC1A6300790BDE /* TORConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TORConfiguration.m; sourceTree = "<group>"; };
+		7989DC4125AC1A6300790BDE /* TORController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TORController.m; sourceTree = "<group>"; };
+		7989DC4225AC1A6300790BDE /* TORThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TORThread.m; sourceTree = "<group>"; };
+		7989DC4325AC1A6300790BDE /* TORLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TORLogging.h; sourceTree = "<group>"; };
+		7989DC4425AC1A6300790BDE /* TORConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TORConfiguration.h; sourceTree = "<group>"; };
+		7989DC4525AC1A6300790BDE /* TORLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TORLogging.m; sourceTree = "<group>"; };
+		7989DC4625AC1A6300790BDE /* TORNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TORNode.h; sourceTree = "<group>"; };
+		7989DC4725AC1A6300790BDE /* TORController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TORController.h; sourceTree = "<group>"; };
+		7989DC5525AC1A7700790BDE /* NSCharacterSet+PredefinedSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCharacterSet+PredefinedSets.m"; sourceTree = "<group>"; };
+		7989DC5625AC1A7700790BDE /* NSCharacterSet+PredefinedSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCharacterSet+PredefinedSets.h"; sourceTree = "<group>"; };
+		7989DC6C25AC216000790BDE /* libevent_pthreads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_pthreads.a; path = "build/arm64-apple-ios/libevent/lib/libevent_pthreads.a"; sourceTree = "<group>"; };
+		7989DC6D25AC216000790BDE /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent.a; path = "build/arm64-apple-ios/libevent/lib/libevent.a"; sourceTree = "<group>"; };
+		7989DC6E25AC216100790BDE /* libevent_extra.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_extra.a; path = "build/arm64-apple-ios/libevent/lib/libevent_extra.a"; sourceTree = "<group>"; };
+		7989DC6F25AC216100790BDE /* libevent_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_core.a; path = "build/arm64-apple-ios/libevent/lib/libevent_core.a"; sourceTree = "<group>"; };
+		7989DC7425AC217D00790BDE /* liblzma.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblzma.a; path = "build/arm64-apple-ios/liblzma/lib/liblzma.a"; sourceTree = "<group>"; };
+		7989DC7625AC219700790BDE /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "build/arm64-apple-ios/openssl/lib/libcrypto.a"; sourceTree = "<group>"; };
+		7989DC7725AC219700790BDE /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "build/arm64-apple-ios/openssl/lib/libssl.a"; sourceTree = "<group>"; };
+		7989DC7A25AC21BE00790BDE /* libtor-meminfo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-meminfo.a"; path = "build/arm64-apple-ios/tor/libtor-meminfo.a"; sourceTree = "<group>"; };
+		7989DC7B25AC21BE00790BDE /* libtor-err.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-err.a"; path = "build/arm64-apple-ios/tor/libtor-err.a"; sourceTree = "<group>"; };
+		7989DC7C25AC21BE00790BDE /* libtor-pubsub.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-pubsub.a"; path = "build/arm64-apple-ios/tor/libtor-pubsub.a"; sourceTree = "<group>"; };
+		7989DC7D25AC21BE00790BDE /* libtor-container.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-container.a"; path = "build/arm64-apple-ios/tor/libtor-container.a"; sourceTree = "<group>"; };
+		7989DC7E25AC21BE00790BDE /* libtor-buf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-buf.a"; path = "build/arm64-apple-ios/tor/libtor-buf.a"; sourceTree = "<group>"; };
+		7989DC7F25AC21BE00790BDE /* libor-trunnel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libor-trunnel.a"; path = "build/arm64-apple-ios/tor/libor-trunnel.a"; sourceTree = "<group>"; };
+		7989DC8025AC21BE00790BDE /* libtor-wallclock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-wallclock.a"; path = "build/arm64-apple-ios/tor/libtor-wallclock.a"; sourceTree = "<group>"; };
+		7989DC8125AC21BE00790BDE /* libtor-tls.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-tls.a"; path = "build/arm64-apple-ios/tor/libtor-tls.a"; sourceTree = "<group>"; };
+		7989DC8225AC21BE00790BDE /* libtor-trace.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-trace.a"; path = "build/arm64-apple-ios/tor/libtor-trace.a"; sourceTree = "<group>"; };
+		7989DC8325AC21BE00790BDE /* libtor-lock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-lock.a"; path = "build/arm64-apple-ios/tor/libtor-lock.a"; sourceTree = "<group>"; };
+		7989DC8425AC21BE00790BDE /* libtor-geoip.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-geoip.a"; path = "build/arm64-apple-ios/tor/libtor-geoip.a"; sourceTree = "<group>"; };
+		7989DC8525AC21BE00790BDE /* libtor-memarea.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-memarea.a"; path = "build/arm64-apple-ios/tor/libtor-memarea.a"; sourceTree = "<group>"; };
+		7989DC8625AC21BE00790BDE /* libcurve25519_donna.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurve25519_donna.a; path = "build/arm64-apple-ios/tor/libcurve25519_donna.a"; sourceTree = "<group>"; };
+		7989DC8725AC21BE00790BDE /* libed25519_donna.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libed25519_donna.a; path = "build/arm64-apple-ios/tor/libed25519_donna.a"; sourceTree = "<group>"; };
+		7989DC8825AC21BE00790BDE /* libtor-log.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-log.a"; path = "build/arm64-apple-ios/tor/libtor-log.a"; sourceTree = "<group>"; };
+		7989DC8925AC21BE00790BDE /* libtor-osinfo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-osinfo.a"; path = "build/arm64-apple-ios/tor/libtor-osinfo.a"; sourceTree = "<group>"; };
+		7989DC8A25AC21BF00790BDE /* libtor-time.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-time.a"; path = "build/arm64-apple-ios/tor/libtor-time.a"; sourceTree = "<group>"; };
+		7989DC8B25AC21BF00790BDE /* libtor-string.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-string.a"; path = "build/arm64-apple-ios/tor/libtor-string.a"; sourceTree = "<group>"; };
+		7989DC8C25AC21BF00790BDE /* libtor-process.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-process.a"; path = "build/arm64-apple-ios/tor/libtor-process.a"; sourceTree = "<group>"; };
+		7989DC8D25AC21BF00790BDE /* libtor-app.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-app.a"; path = "build/arm64-apple-ios/tor/libtor-app.a"; sourceTree = "<group>"; };
+		7989DC8E25AC21BF00790BDE /* libtor-fdio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-fdio.a"; path = "build/arm64-apple-ios/tor/libtor-fdio.a"; sourceTree = "<group>"; };
+		7989DC8F25AC21BF00790BDE /* libtor-thread.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-thread.a"; path = "build/arm64-apple-ios/tor/libtor-thread.a"; sourceTree = "<group>"; };
+		7989DC9025AC21BF00790BDE /* libtor-net.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-net.a"; path = "build/arm64-apple-ios/tor/libtor-net.a"; sourceTree = "<group>"; };
+		7989DC9125AC21BF00790BDE /* libtor-ctime.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-ctime.a"; path = "build/arm64-apple-ios/tor/libtor-ctime.a"; sourceTree = "<group>"; };
+		7989DC9225AC21BF00790BDE /* libtor-smartlist-core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-smartlist-core.a"; path = "build/arm64-apple-ios/tor/libtor-smartlist-core.a"; sourceTree = "<group>"; };
+		7989DC9325AC21BF00790BDE /* libtor-math.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-math.a"; path = "build/arm64-apple-ios/tor/libtor-math.a"; sourceTree = "<group>"; };
+		7989DC9425AC21BF00790BDE /* libtor-encoding.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-encoding.a"; path = "build/arm64-apple-ios/tor/libtor-encoding.a"; sourceTree = "<group>"; };
+		7989DC9525AC21BF00790BDE /* libtor-term.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-term.a"; path = "build/arm64-apple-ios/tor/libtor-term.a"; sourceTree = "<group>"; };
+		7989DC9625AC21BF00790BDE /* libtor-evloop.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-evloop.a"; path = "build/arm64-apple-ios/tor/libtor-evloop.a"; sourceTree = "<group>"; };
+		7989DC9725AC21BF00790BDE /* libtor-malloc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-malloc.a"; path = "build/arm64-apple-ios/tor/libtor-malloc.a"; sourceTree = "<group>"; };
+		7989DC9825AC21BF00790BDE /* libtor-crypt-ops.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-crypt-ops.a"; path = "build/arm64-apple-ios/tor/libtor-crypt-ops.a"; sourceTree = "<group>"; };
+		7989DC9925AC21BF00790BDE /* libtor-llharden.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-llharden.a"; path = "build/arm64-apple-ios/tor/libtor-llharden.a"; sourceTree = "<group>"; };
+		7989DC9A25AC21BF00790BDE /* libtor-sandbox.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-sandbox.a"; path = "build/arm64-apple-ios/tor/libtor-sandbox.a"; sourceTree = "<group>"; };
+		7989DC9B25AC21BF00790BDE /* libtor-dispatch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-dispatch.a"; path = "build/arm64-apple-ios/tor/libtor-dispatch.a"; sourceTree = "<group>"; };
+		7989DC9C25AC21BF00790BDE /* libtor-confmgt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-confmgt.a"; path = "build/arm64-apple-ios/tor/libtor-confmgt.a"; sourceTree = "<group>"; };
+		7989DC9D25AC21BF00790BDE /* libed25519_ref10.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libed25519_ref10.a; path = "build/arm64-apple-ios/tor/libed25519_ref10.a"; sourceTree = "<group>"; };
+		7989DC9E25AC21BF00790BDE /* libkeccak-tiny.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libkeccak-tiny.a"; path = "build/arm64-apple-ios/tor/libkeccak-tiny.a"; sourceTree = "<group>"; };
+		7989DC9F25AC21BF00790BDE /* libtor-fs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-fs.a"; path = "build/arm64-apple-ios/tor/libtor-fs.a"; sourceTree = "<group>"; };
+		7989DCA025AC21BF00790BDE /* libtor-version.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-version.a"; path = "build/arm64-apple-ios/tor/libtor-version.a"; sourceTree = "<group>"; };
+		7989DCA125AC21BF00790BDE /* libtor-intmath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-intmath.a"; path = "build/arm64-apple-ios/tor/libtor-intmath.a"; sourceTree = "<group>"; };
+		7989DCA225AC21BF00790BDE /* libtor-compress.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtor-compress.a"; path = "build/arm64-apple-ios/tor/libtor-compress.a"; sourceTree = "<group>"; };
+		7989DCCD25AC224400790BDE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7989DC2425AC196E00790BDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7989DCCF25AC226300790BDE /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7989DC1D25AC196E00790BDE = {
+			isa = PBXGroup;
+			children = (
+				7989DC2925AC196E00790BDE /* BCTor */,
+				7989DC3525AC19D100790BDE /* Tor */,
+				7989DC2825AC196E00790BDE /* Products */,
+				7989DC6B25AC216000790BDE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7989DC2825AC196E00790BDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7989DC2725AC196E00790BDE /* Tor.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7989DC2925AC196E00790BDE /* BCTor */ = {
+			isa = PBXGroup;
+			children = (
+				7989DC2A25AC196E00790BDE /* BCTor.h */,
+				7989DC2B25AC196E00790BDE /* Info.plist */,
+			);
+			path = BCTor;
+			sourceTree = "<group>";
+		};
+		7989DC3525AC19D100790BDE /* Tor */ = {
+			isa = PBXGroup;
+			children = (
+				7989DC3625AC1A0300790BDE /* orconfig.h */,
+				7989DC3D25AC1A6300790BDE /* TORCircuit.h */,
+				7989DC3E25AC1A6300790BDE /* TORCircuit.m */,
+				7989DC4425AC1A6300790BDE /* TORConfiguration.h */,
+				7989DC4025AC1A6300790BDE /* TORConfiguration.m */,
+				7989DC4725AC1A6300790BDE /* TORController.h */,
+				7989DC4125AC1A6300790BDE /* TORController.m */,
+				7989DC4325AC1A6300790BDE /* TORLogging.h */,
+				7989DC4525AC1A6300790BDE /* TORLogging.m */,
+				7989DC4625AC1A6300790BDE /* TORNode.h */,
+				7989DC3C25AC1A6300790BDE /* TORNode.m */,
+				7989DC3F25AC1A6300790BDE /* TORThread.h */,
+				7989DC4225AC1A6300790BDE /* TORThread.m */,
+				7989DC5625AC1A7700790BDE /* NSCharacterSet+PredefinedSets.h */,
+				7989DC5525AC1A7700790BDE /* NSCharacterSet+PredefinedSets.m */,
+			);
+			path = Tor;
+			sourceTree = "<group>";
+		};
+		7989DC6B25AC216000790BDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7989DCCD25AC224400790BDE /* libz.tbd */,
+				7989DC7625AC219700790BDE /* libcrypto.a */,
+				7989DC7725AC219700790BDE /* libssl.a */,
+				7989DC7425AC217D00790BDE /* liblzma.a */,
+				7989DC6F25AC216100790BDE /* libevent_core.a */,
+				7989DC6E25AC216100790BDE /* libevent_extra.a */,
+				7989DC6C25AC216000790BDE /* libevent_pthreads.a */,
+				7989DC6D25AC216000790BDE /* libevent.a */,
+				7989DC8625AC21BE00790BDE /* libcurve25519_donna.a */,
+				7989DC8725AC21BE00790BDE /* libed25519_donna.a */,
+				7989DC9D25AC21BF00790BDE /* libed25519_ref10.a */,
+				7989DC9E25AC21BF00790BDE /* libkeccak-tiny.a */,
+				7989DC7F25AC21BE00790BDE /* libor-trunnel.a */,
+				7989DC8D25AC21BF00790BDE /* libtor-app.a */,
+				7989DC7E25AC21BE00790BDE /* libtor-buf.a */,
+				7989DCA225AC21BF00790BDE /* libtor-compress.a */,
+				7989DC9C25AC21BF00790BDE /* libtor-confmgt.a */,
+				7989DC7D25AC21BE00790BDE /* libtor-container.a */,
+				7989DC9825AC21BF00790BDE /* libtor-crypt-ops.a */,
+				7989DC9125AC21BF00790BDE /* libtor-ctime.a */,
+				7989DC9B25AC21BF00790BDE /* libtor-dispatch.a */,
+				7989DC9425AC21BF00790BDE /* libtor-encoding.a */,
+				7989DC7B25AC21BE00790BDE /* libtor-err.a */,
+				7989DC9625AC21BF00790BDE /* libtor-evloop.a */,
+				7989DC8E25AC21BF00790BDE /* libtor-fdio.a */,
+				7989DC9F25AC21BF00790BDE /* libtor-fs.a */,
+				7989DC8425AC21BE00790BDE /* libtor-geoip.a */,
+				7989DCA125AC21BF00790BDE /* libtor-intmath.a */,
+				7989DC9925AC21BF00790BDE /* libtor-llharden.a */,
+				7989DC8325AC21BE00790BDE /* libtor-lock.a */,
+				7989DC8825AC21BE00790BDE /* libtor-log.a */,
+				7989DC9725AC21BF00790BDE /* libtor-malloc.a */,
+				7989DC9325AC21BF00790BDE /* libtor-math.a */,
+				7989DC8525AC21BE00790BDE /* libtor-memarea.a */,
+				7989DC7A25AC21BE00790BDE /* libtor-meminfo.a */,
+				7989DC9025AC21BF00790BDE /* libtor-net.a */,
+				7989DC8925AC21BE00790BDE /* libtor-osinfo.a */,
+				7989DC8C25AC21BF00790BDE /* libtor-process.a */,
+				7989DC7C25AC21BE00790BDE /* libtor-pubsub.a */,
+				7989DC9A25AC21BF00790BDE /* libtor-sandbox.a */,
+				7989DC9225AC21BF00790BDE /* libtor-smartlist-core.a */,
+				7989DC8B25AC21BF00790BDE /* libtor-string.a */,
+				7989DC9525AC21BF00790BDE /* libtor-term.a */,
+				7989DC8F25AC21BF00790BDE /* libtor-thread.a */,
+				7989DC8A25AC21BF00790BDE /* libtor-time.a */,
+				7989DC8125AC21BE00790BDE /* libtor-tls.a */,
+				7989DC8225AC21BE00790BDE /* libtor-trace.a */,
+				7989DCA025AC21BF00790BDE /* libtor-version.a */,
+				7989DC8025AC21BE00790BDE /* libtor-wallclock.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7989DC2225AC196E00790BDE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7989DC2C25AC196E00790BDE /* BCTor.h in Headers */,
+				7989DC5225AC1A6300790BDE /* TORNode.h in Headers */,
+				7989DC5325AC1A6300790BDE /* TORController.h in Headers */,
+				7989DC4925AC1A6300790BDE /* TORCircuit.h in Headers */,
+				7989DC5025AC1A6300790BDE /* TORConfiguration.h in Headers */,
+				7989DC3725AC1A0300790BDE /* orconfig.h in Headers */,
+				7989DC5825AC1A7700790BDE /* NSCharacterSet+PredefinedSets.h in Headers */,
+				7989DC4F25AC1A6300790BDE /* TORLogging.h in Headers */,
+				7989DC4B25AC1A6300790BDE /* TORThread.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7989DC2625AC196E00790BDE /* BCTor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7989DC2F25AC196E00790BDE /* Build configuration list for PBXNativeTarget "BCTor" */;
+			buildPhases = (
+				7989DC2225AC196E00790BDE /* Headers */,
+				7989DC2325AC196E00790BDE /* Sources */,
+				7989DC2425AC196E00790BDE /* Frameworks */,
+				7989DC2525AC196E00790BDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BCTor;
+			productName = BCTor;
+			productReference = 7989DC2725AC196E00790BDE /* Tor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7989DC1E25AC196E00790BDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					7989DC2625AC196E00790BDE = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 7989DC2125AC196E00790BDE /* Build configuration list for PBXProject "BCTor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7989DC1D25AC196E00790BDE;
+			productRefGroup = 7989DC2825AC196E00790BDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7989DC2625AC196E00790BDE /* BCTor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7989DC2525AC196E00790BDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7989DC2325AC196E00790BDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7989DC4825AC1A6300790BDE /* TORNode.m in Sources */,
+				7989DC4A25AC1A6300790BDE /* TORCircuit.m in Sources */,
+				7989DC4C25AC1A6300790BDE /* TORConfiguration.m in Sources */,
+				7989DC4D25AC1A6300790BDE /* TORController.m in Sources */,
+				7989DC4E25AC1A6300790BDE /* TORThread.m in Sources */,
+				7989DC5725AC1A7700790BDE /* NSCharacterSet+PredefinedSets.m in Sources */,
+				7989DC5125AC1A6300790BDE /* TORLogging.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7989DC2D25AC196E00790BDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7989DC2E25AC196E00790BDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7989DC3025AC196E00790BDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YZHG975W3A;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"\"$(SRCROOT)/Tor/include\"",
+					"\"$(SRCROOT)/Tor/tor\"",
+					"\"$(SRCROOT)/Tor/tor/src\"",
+					"\"$(SRCROOT)/Tor/libevent/include\"",
+					"\"$(SRCROOT)/Tor/openssl/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)/openssl\"",
+					"\"$(BUILT_PRODUCTS_DIR)/libevent\"",
+				);
+				INFOPLIST_FILE = BCTor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = blockchaincommons.BCTor;
+				PRODUCT_NAME = Tor;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7989DC3125AC196E00790BDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YZHG975W3A;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"\"$(SRCROOT)/Tor/include\"",
+					"\"$(SRCROOT)/Tor/tor\"",
+					"\"$(SRCROOT)/Tor/tor/src\"",
+					"\"$(SRCROOT)/Tor/libevent/include\"",
+					"\"$(SRCROOT)/Tor/openssl/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)/openssl\"",
+					"\"$(BUILT_PRODUCTS_DIR)/libevent\"",
+				);
+				INFOPLIST_FILE = BCTor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = blockchaincommons.BCTor;
+				PRODUCT_NAME = Tor;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7989DC2125AC196E00790BDE /* Build configuration list for PBXProject "BCTor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7989DC2D25AC196E00790BDE /* Debug */,
+				7989DC2E25AC196E00790BDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7989DC2F25AC196E00790BDE /* Build configuration list for PBXNativeTarget "BCTor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7989DC3025AC196E00790BDE /* Debug */,
+				7989DC3125AC196E00790BDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7989DC1E25AC196E00790BDE /* Project object */;
+}
