@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7989DCE625B004B500790BDE /* BCTorTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989DCE525B004B500790BDE /* BCTorTestApp.swift */; };
+		7989DCE825B004B500790BDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989DCE725B004B500790BDE /* ContentView.swift */; };
+		7989DCEA25B004B700790BDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7989DCE925B004B700790BDE /* Assets.xcassets */; };
+		7989DCED25B004B700790BDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7989DCEC25B004B700790BDE /* Preview Assets.xcassets */; };
+		7989DCF925B0050000790BDE /* Tor.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7989DCF825B0050000790BDE /* Tor.xcframework */; };
+		7989DCFA25B0050000790BDE /* Tor.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7989DCF825B0050000790BDE /* Tor.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7989DD0325B0075800790BDE /* BCTorTest_macOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989DD0225B0075800790BDE /* BCTorTest_macOSApp.swift */; };
+		7989DD0525B0075800790BDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989DD0425B0075800790BDE /* ContentView.swift */; };
+		7989DD0725B0075900790BDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7989DD0625B0075900790BDE /* Assets.xcassets */; };
+		7989DD0A25B0075900790BDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7989DD0925B0075900790BDE /* Preview Assets.xcassets */; };
+		7989DD1125B0077B00790BDE /* Tor.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7989DCF825B0050000790BDE /* Tor.xcframework */; };
+		7989DD1225B0077B00790BDE /* Tor.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7989DCF825B0050000790BDE /* Tor.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7989DCFB25B0050000790BDE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7989DCFA25B0050000790BDE /* Tor.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7989DD1325B0077B00790BDE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7989DD1225B0077B00790BDE /* Tor.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7989DCE225B004B500790BDE /* BCTorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCTorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7989DCE525B004B500790BDE /* BCTorTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCTorTestApp.swift; sourceTree = "<group>"; };
+		7989DCE725B004B500790BDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7989DCE925B004B700790BDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7989DCEC25B004B700790BDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7989DCEE25B004B700790BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7989DCF625B004EC00790BDE /* BCTorTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BCTorTest.entitlements; sourceTree = "<group>"; };
+		7989DCF825B0050000790BDE /* Tor.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Tor.xcframework; path = build/Tor.xcframework; sourceTree = "<group>"; };
+		7989DD0025B0075800790BDE /* BCTorTest-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BCTorTest-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7989DD0225B0075800790BDE /* BCTorTest_macOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCTorTest_macOSApp.swift; sourceTree = "<group>"; };
+		7989DD0425B0075800790BDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7989DD0625B0075900790BDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7989DD0925B0075900790BDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7989DD0B25B0075900790BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7989DD0C25B0075900790BDE /* BCTorTest_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BCTorTest_macOS.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7989DCDF25B004B500790BDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7989DCF925B0050000790BDE /* Tor.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7989DCFD25B0075800790BDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7989DD1125B0077B00790BDE /* Tor.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7989DCD925B004B500790BDE = {
+			isa = PBXGroup;
+			children = (
+				7989DCE425B004B500790BDE /* BCTorTest */,
+				7989DD0125B0075800790BDE /* BCTorTest-macOS */,
+				7989DCE325B004B500790BDE /* Products */,
+				7989DCF725B0050000790BDE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7989DCE325B004B500790BDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7989DCE225B004B500790BDE /* BCTorTest.app */,
+				7989DD0025B0075800790BDE /* BCTorTest-macOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7989DCE425B004B500790BDE /* BCTorTest */ = {
+			isa = PBXGroup;
+			children = (
+				7989DCF625B004EC00790BDE /* BCTorTest.entitlements */,
+				7989DCE525B004B500790BDE /* BCTorTestApp.swift */,
+				7989DCE725B004B500790BDE /* ContentView.swift */,
+				7989DCE925B004B700790BDE /* Assets.xcassets */,
+				7989DCEE25B004B700790BDE /* Info.plist */,
+				7989DCEB25B004B700790BDE /* Preview Content */,
+			);
+			path = BCTorTest;
+			sourceTree = "<group>";
+		};
+		7989DCEB25B004B700790BDE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7989DCEC25B004B700790BDE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7989DCF725B0050000790BDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7989DCF825B0050000790BDE /* Tor.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7989DD0125B0075800790BDE /* BCTorTest-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				7989DD0225B0075800790BDE /* BCTorTest_macOSApp.swift */,
+				7989DD0425B0075800790BDE /* ContentView.swift */,
+				7989DD0625B0075900790BDE /* Assets.xcassets */,
+				7989DD0B25B0075900790BDE /* Info.plist */,
+				7989DD0C25B0075900790BDE /* BCTorTest_macOS.entitlements */,
+				7989DD0825B0075900790BDE /* Preview Content */,
+			);
+			path = "BCTorTest-macOS";
+			sourceTree = "<group>";
+		};
+		7989DD0825B0075900790BDE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7989DD0925B0075900790BDE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7989DCE125B004B500790BDE /* BCTorTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7989DCF125B004B700790BDE /* Build configuration list for PBXNativeTarget "BCTorTest" */;
+			buildPhases = (
+				7989DCDE25B004B500790BDE /* Sources */,
+				7989DCDF25B004B500790BDE /* Frameworks */,
+				7989DCE025B004B500790BDE /* Resources */,
+				7989DCFB25B0050000790BDE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BCTorTest;
+			productName = BCTorTest;
+			productReference = 7989DCE225B004B500790BDE /* BCTorTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7989DCFF25B0075800790BDE /* BCTorTest-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7989DD0D25B0075900790BDE /* Build configuration list for PBXNativeTarget "BCTorTest-macOS" */;
+			buildPhases = (
+				7989DCFC25B0075800790BDE /* Sources */,
+				7989DCFD25B0075800790BDE /* Frameworks */,
+				7989DCFE25B0075800790BDE /* Resources */,
+				7989DD1325B0077B00790BDE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BCTorTest-macOS";
+			productName = "BCTorTest-macOS";
+			productReference = 7989DD0025B0075800790BDE /* BCTorTest-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7989DCDA25B004B500790BDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					7989DCE125B004B500790BDE = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					7989DCFF25B0075800790BDE = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 7989DCDD25B004B500790BDE /* Build configuration list for PBXProject "BCTorTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7989DCD925B004B500790BDE;
+			productRefGroup = 7989DCE325B004B500790BDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7989DCE125B004B500790BDE /* BCTorTest */,
+				7989DCFF25B0075800790BDE /* BCTorTest-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7989DCE025B004B500790BDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7989DCED25B004B700790BDE /* Preview Assets.xcassets in Resources */,
+				7989DCEA25B004B700790BDE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7989DCFE25B0075800790BDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7989DD0A25B0075900790BDE /* Preview Assets.xcassets in Resources */,
+				7989DD0725B0075900790BDE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7989DCDE25B004B500790BDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7989DCE825B004B500790BDE /* ContentView.swift in Sources */,
+				7989DCE625B004B500790BDE /* BCTorTestApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7989DCFC25B0075800790BDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7989DD0525B0075800790BDE /* ContentView.swift in Sources */,
+				7989DD0325B0075800790BDE /* BCTorTest_macOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7989DCEF25B004B700790BDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7989DCF025B004B700790BDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7989DCF225B004B700790BDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BCTorTest/BCTorTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BCTorTest/Preview Content\"";
+				DEVELOPMENT_TEAM = YZHG975W3A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BCTorTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = blockchaincommons.BCTorTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7989DCF325B004B700790BDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BCTorTest/BCTorTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BCTorTest/Preview Content\"";
+				DEVELOPMENT_TEAM = YZHG975W3A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BCTorTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = blockchaincommons.BCTorTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7989DD0E25B0075900790BDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BCTorTest-macOS/BCTorTest_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "BCTorTest-macOS/Preview\\ Content";
+				DEVELOPMENT_TEAM = YZHG975W3A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BCTorTest-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "blockchaincommons.BCTorTest-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7989DD0F25B0075900790BDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BCTorTest-macOS/BCTorTest_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "BCTorTest-macOS/Preview\\ Content";
+				DEVELOPMENT_TEAM = YZHG975W3A;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BCTorTest-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "blockchaincommons.BCTorTest-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7989DCDD25B004B500790BDE /* Build configuration list for PBXProject "BCTorTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7989DCEF25B004B700790BDE /* Debug */,
+				7989DCF025B004B700790BDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7989DCF125B004B700790BDE /* Build configuration list for PBXNativeTarget "BCTorTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7989DCF225B004B700790BDE /* Debug */,
+				7989DCF325B004B700790BDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7989DD0D25B0075900790BDE /* Build configuration list for PBXNativeTarget "BCTorTest-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7989DD0E25B0075900790BDE /* Debug */,
+				7989DD0F25B0075900790BDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7989DCDA25B004B500790BDE /* Project object */;
+}

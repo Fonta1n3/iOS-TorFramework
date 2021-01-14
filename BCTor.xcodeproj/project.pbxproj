@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7989DC2C25AC196E00790BDE /* BCTor.h in Headers */ = {isa = PBXBuildFile; fileRef = 7989DC2A25AC196E00790BDE /* BCTor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7989DC2C25AC196E00790BDE /* Tor.h in Headers */ = {isa = PBXBuildFile; fileRef = 7989DC2A25AC196E00790BDE /* Tor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7989DC3725AC1A0300790BDE /* orconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7989DC3625AC1A0300790BDE /* orconfig.h */; };
 		7989DC4825AC1A6300790BDE /* TORNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989DC3C25AC1A6300790BDE /* TORNode.m */; };
 		7989DC4925AC1A6300790BDE /* TORCircuit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7989DC3D25AC1A6300790BDE /* TORCircuit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,7 +28,7 @@
 
 /* Begin PBXFileReference section */
 		7989DC2725AC196E00790BDE /* Tor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7989DC2A25AC196E00790BDE /* BCTor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCTor.h; sourceTree = "<group>"; };
+		7989DC2A25AC196E00790BDE /* Tor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tor.h; sourceTree = "<group>"; };
 		7989DC2B25AC196E00790BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7989DC3625AC1A0300790BDE /* orconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = orconfig.h; path = tor/orconfig.h; sourceTree = "<group>"; };
 		7989DC3C25AC1A6300790BDE /* TORNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TORNode.m; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		7989DC2925AC196E00790BDE /* BCTor */ = {
 			isa = PBXGroup;
 			children = (
-				7989DC2A25AC196E00790BDE /* BCTor.h */,
+				7989DC2A25AC196E00790BDE /* Tor.h */,
 				7989DC2B25AC196E00790BDE /* Info.plist */,
 			);
 			path = BCTor;
@@ -220,7 +220,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7989DC2C25AC196E00790BDE /* BCTor.h in Headers */,
+				7989DC2C25AC196E00790BDE /* Tor.h in Headers */,
 				7989DC5225AC1A6300790BDE /* TORNode.h in Headers */,
 				7989DC5325AC1A6300790BDE /* TORController.h in Headers */,
 				7989DC4925AC1A6300790BDE /* TORCircuit.h in Headers */,
